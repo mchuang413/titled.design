@@ -91,7 +91,7 @@ export default function Home() {
                 <div className="h-40 w-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mb-4"></div>
                 <h3 className="text-2xl font-bold mb-2">Student {i}</h3>
                 <p className="text-sm text-gray-500">
-                  Visionary creative and tech-savvy thinker passionate about impact.
+                  dawg1
                 </p>
               </motion.div>
             ))}
