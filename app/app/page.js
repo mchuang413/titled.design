@@ -89,9 +89,9 @@ export default function Home() {
                 className="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300"
               >
                 <div className="h-40 w-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mb-4"></div>
-                <h3 className="text-2xl font-bold mb-2">Student {i}</h3>
+                <h3 className="text-2xl font-bold mb-2">Dawg {i}</h3>
                 <p className="text-sm text-gray-500">
-                  dawg1
+                  susssssssss
                 </p>
               </motion.div>
             ))}
