@@ -166,37 +166,6 @@ export default function Home() {
         <br /> Based in California.
       </p>
     </div>
-
-    {/* Column 2: Navigation */}
-    <div>
-      <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
-      <ul className="space-y-3 text-sm">
-        <li><a href="#" className="hover:text-white transition">Home</a></li>
-        <li><a href="#" className="hover:text-white transition">About</a></li>
-        <li><a href="#" className="hover:text-white transition">Projects</a></li>
-        <li><a href="#" className="hover:text-white transition">Contact</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 className="text-lg font-semibold mb-4 text-white">Stay in the Loop</h4>
-      <p className="text-sm text-gray-400 mb-4">
-        Get occasional updates about new projects and stories.
-      </p>
-      <form className="flex flex-col sm:flex-row items-center gap-3">
-        <input
-          type="email"
-          placeholder="Your email"
-          className="w-full px-4 py-2 bg-gray-800 border border-gray-700 text-sm rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
-        />
-        <button
-          type="submit"
-          className="px-5 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-600 transition"
-        >
-          Subscribe
-        </button>
-      </form>
-    </div>
   </div>
 
   <div className="text-center text-xs text-gray-600 mt-12">
