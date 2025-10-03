@@ -103,27 +103,27 @@ export default function Home() {
             through visual storytelling.
           </motion.p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
             {team.map((person) => (
-                <motion.div
-                  key={person.id}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true }}
-                  className="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300"
-                >
-                  <img
-                    src={person.img}
-                    alt={person.name}
-                    className="h-40 w-full object-cover rounded-lg mb-4"
-                  />
-                  <h3 className="text-2xl font-bold mb-1">{person.name}</h3>
-                  <p className="text-sm font-medium text-gray-700 mb-2">{person.role}</p>
-                  <p className="text-sm text-gray-500">{person.bio}</p>
-                </motion.div>
-              ))}
-            </div>
+              <motion.div
+                key={person.id}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="w-72 bg-white border border-gray-200 rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <img
+                  src={person.img}
+                  alt={person.name}
+                  className="h-40 w-40 object-cover rounded-full mx-auto mb-4 border border-gray-300"
+                />
+                <h3 className="text-2xl font-bold mb-1">{person.name}</h3>
+                <p className="text-sm font-medium text-gray-700 mb-2">{person.role}</p>
+                <p className="text-sm text-gray-500">{person.bio || "Coming soon..."}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
