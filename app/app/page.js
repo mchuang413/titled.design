@@ -120,7 +120,7 @@ export default function Home() {
                 />
                 <h3 className="text-2xl font-bold mb-1">{person.name}</h3>
                 <p className="text-sm font-medium text-gray-700 mb-2">{person.role}</p>
-                <p className="text-sm text-gray-500">{person.bio || "Coming soon..."}</p>
+                <p className="text-sm text-gray-500">{person.bio}</p>
               </motion.div>
             ))}
           </div>
