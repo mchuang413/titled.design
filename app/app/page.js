@@ -21,21 +21,21 @@ const team = [
   {
     id: 1,
     name: "Shauryan Kanaujia",
-    role: "Senior Janitor",
+    role: "Co-President",
     bio: "",
     img: "/1.png"
   },
   {
     id: 2,
     name: "Hanjoon Lee",
-    role: "Janitor Lead",
+    role: "Co-President",
     bio: "",
     img: "/2.png"
   },
   {
     id: 3,
     name: "Kalyaa Pradeep",
-    role: "AI Fact Checker",
+    role: "Vice President",
     bio: "",
     img: "/3.png"
   },
