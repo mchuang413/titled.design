@@ -19,7 +19,7 @@ const OutlineCards = () => {
       cursorEl.style.transition = "0.25s all";
       cursorEl.style.width = `${width + HOVER_PADDING}px`;
       cursorEl.style.height = `${height + HOVER_PADDING}px`;
-      cursorEl.style.borderRadius = `${HOVER_PADDING / 2}px`;
+      cursorEl.style.borderRadius = "24px"; // rounded shape around card
       cursorEl.style.top = `${top + window.scrollY + height / 2}px`;
       cursorEl.style.left = `${left + width / 2}px`;
     } else {
@@ -74,9 +74,9 @@ const Card = ({ bgUrl, title, href }) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="outline-card flex w-full min-h-[360px] flex-col justify-end overflow-hidden rounded-xl bg-neutral-400 shadow-xl shadow-neutral-900/30 transition-transform duration-300 hover:scale-[1.03]"
+      className="outline-card flex w-72 h-56 flex-col justify-end overflow-hidden rounded-2xl bg-neutral-400 shadow-xl shadow-neutral-900/30 transition-transform duration-300 hover:scale-[1.05]"
     >
-      <div className="pointer-events-none flex items-center justify-between bg-gradient-to-t from-black to-black/0 p-6 pt-8 text-xl font-medium text-white md:text-2xl">
+      <div className="pointer-events-none flex items-center justify-between bg-black/40 p-6 text-xl font-semibold text-white backdrop-blur-sm">
         <h3>{title}</h3>
         <FiArrowRight />
       </div>

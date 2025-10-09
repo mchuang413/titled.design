@@ -99,7 +99,7 @@ export default function Home() {
             className="text-xl text-gray-600 mb-20 max-w-3xl mx-auto"
           >
             <span className="font-semibold text-black">TITLED</span> is a boundary-pushing design agency transforming
-            <span className="underline decoration-wavy decoration-black"> brand identity </span>
+            <span className=""> brand identity </span>
             through visual storytelling.
           </motion.p>
 
@@ -146,12 +146,6 @@ export default function Home() {
     <p className="text-lg text-gray-600 mb-8">
       Have an idea? Let’s bring it to life through bold design and creative direction.
     </p>
-    <a
-      href="#"
-      className="inline-block px-8 py-4 bg-black text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition"
-    >
-      Get in Touch
-    </a>
   </div>
 </section>
 
