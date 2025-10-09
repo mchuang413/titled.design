@@ -132,12 +132,60 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="py-32 bg-gray-50 text-gray-900">
-        <div className="text-center mb-12">
-          <h2 className="text-5xl font-extrabold text-gray-800">Featured Projects</h2>
-          <p className="text-lg text-gray-500 mt-4">Explore some of our latest work and initiatives.</p>
-        </div>
-        <Display />
-      </section>
+  <div className="text-center mb-16">
+    <h2 className="text-5xl font-extrabold text-gray-800">Featured Projects</h2>
+    <p className="text-lg text-gray-500 mt-4">
+      Explore some of our latest creations and collaborations.
+    </p>
+  </div>
+
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 place-items-center">
+    {[
+      {
+        id: 1,
+        name: "Competitive Math Club",
+        link: "https://competitivemathclub.vercel.app/",
+        img: "/image1.png",
+      },
+      {
+        id: 2,
+        name: "Hearts of Baking",
+        link: "https://heartsofbaking.vercel.app/",
+        img: "/image2.png",
+      },
+      {
+        id: 3,
+        name: "AI Pioneers",
+        link: "https://aipioneers.vercel.app/",
+        img: "/image3.png",
+      },
+      {
+        id: 4,
+        name: "CHS Bike Club",
+        link: "https://chs-bike-club.vercel.app/",
+        img: "/bike.png",
+      },
+    ].map((project) => (
+      <motion.a
+        key={project.id}
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05 }}
+        className="flex flex-col items-center text-center group"
+      >
+        <img
+          src={project.img}
+          alt={project.name}
+          className="w-48 h-48 object-cover rounded-full border-4 border-gray-200 shadow-lg transition-all duration-300 group-hover:border-gray-400"
+        />
+        <h3 className="mt-6 text-xl font-semibold text-gray-800 group-hover:text-gray-900 transition">
+          {project.name}
+        </h3>
+      </motion.a>
+    ))}
+  </div>
+</section>
 
  {/* CTA Section */}
 <section className="py-24 bg-white text-gray-900">
